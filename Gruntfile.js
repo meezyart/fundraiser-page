@@ -152,9 +152,9 @@ module.exports = function (grunt) {
     // Compiles Sass to CSS and generates necessary files if requested
     sass: {
       options: {
-        sourcemap: true,
-        loadPath: 'bower_components'
-      },
+        sourceMap: true,
+        includePaths: ['bower_components']
+        },
       dist: {
         files: [{
           expand: true,
@@ -383,7 +383,7 @@ module.exports = function (grunt) {
 
     // Upload to S3
     aws: (grunt.file.exists('aws.json') ? grunt.file.readJSON('aws.json') : {}),
-    awsS3: {
+    aws_s3: {
       options: {
         accessKeyId: '<%= aws.key %>',
         secretAccessKey: '<%= aws.secret %>',
@@ -476,7 +476,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'build',
-    'awsS3:dist'
+    'aws_s3:dist'
   ]);
 
   grunt.registerTask('default', [
