@@ -1,5 +1,5 @@
 # fundraiser-page
-To Using Yoeman 
+To Using Yoeman - http://yeoman.io/codelab/setup.html
 
 ## First INSTALL
 DOwnload from git cd to the Root Folder
