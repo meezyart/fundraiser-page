@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="artforyoursoul/fundrasier" uploadOnCheckin="6054e318-5050-4d8f-b8e2-5fbf4ee9b4d3">
+    <serverData>
+      <paths name="artforyoursoul/fundrasier">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/fundraiser" local="$PROJECT_DIR$/dist" web="/fundraiser" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="artforyoursoul/fundrasier" />
+  </component>
+</project>

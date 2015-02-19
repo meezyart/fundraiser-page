@@ -466,17 +466,17 @@ module.exports = function (grunt) {
     'autoprefixer',
     'concat',
     'cssmin',
-    'uglify',
+    //'uglify',
     'copy:dist',
     'modernizr',
     'rev',
-    'usemin',
-    'htmlmin'
+    'usemin'
+    //'htmlmin'
   ]);
 
   grunt.registerTask('deploy', [
-    'build',
-    'aws_s3:dist'
+    'build'
+    //'aws_s3:dist'
   ]);
 
   grunt.registerTask('default', [
